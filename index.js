@@ -6,7 +6,6 @@ module.exports = (nameEntry) => {
     let verif = false;
     let resultList = [];
 
-
     if (typeof(nameEntry) === 'string') {
         verif = /\s/g.test(nameEntry)
         nameEntry = nameEntry.trim().toLowerCase();
@@ -18,7 +17,7 @@ module.exports = (nameEntry) => {
             for (let i=0;i < nameEntry.length;i++){
 
                 nameList.forEach(name => {
-                    if ((name.toLowerCase() === nameEntry[i].toLowerCase())) {
+                    if (name.toLowerCase().includes(nameEntry[i].toLowerCase())) {
                         resultList.push(nameEntry[i]);
                     };
                 });
@@ -28,15 +27,15 @@ module.exports = (nameEntry) => {
             }
         } else {
             nameList.forEach(name => {
-                if (name.toLowerCase() === nameEntry) {
+                if (name.toLowerCase().includes(nameEntry.toLowerCase())) {
                     result = true;
                 }
             })
         }
-    } else if ((typeof(nameEntry) === 'object') && (verif)) {
+    } else if ((typeof(nameEntry) === 'object') && !(verif)) {
         for (let i=0;i < nameEntry.length;i++){
             nameList.forEach(name => {
-                if ((name.toLowerCase() === nameEntry[i].toLowerCase())) {
+                if ((name.toLowerCase().includes(nameEntry[i].toLowerCase()))) {
                     resultList.push(nameEntry[i]);
                 };
             });
