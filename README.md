@@ -7,7 +7,7 @@ At this point the main function just compares an input string with a json list l
 The focus of this project are build and upload a simple NPM Package, for studies pruporses.
 
     ##Instalation -> 
-    npm install is-know-name 
+    npm install isa-know-name 
     
     ##In code usage -> 
     const name = require('is-know-name');
@@ -16,3 +16,6 @@ The focus of this project are build and upload a simple NPM Package, for studies
     ##Input ->
     String = Returns True or False;
     Array = Returns an array with names that have passed validation; if nobody passes the validation, it returns false;
+
+
+https://www.npmjs.com/package/isa-know-name
