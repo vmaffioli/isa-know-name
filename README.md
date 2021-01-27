@@ -6,20 +6,29 @@ At this point the main function just compares an input string with a json list l
 
 The focus of this project are build and upload a simple NPM Package, for studies pruporses.
 
-## Instalation 
+## Instalation: 
     npm install isa-know-name 
     
-## In code usage example
-    const name = require('is-know-name');
+## In code usage example:
+    const isa = require('is-know-name');
 
-## To check if string/array contains a know name and returns a boolean value
-    name.check('string or array here')
+#### To check if string/array contains a know name:
+Returns a boolean value (true or false)
 
-## To filter the string/input and returns a new array with only know names
-    name.filter('string or array here');
+    const result = isa.check('string or array here')
+
+#### To filter the string/input 
+Returns a new array with only know 
+
+    const result = isa.filter('string or array here')
 
 
+\
+\
+\
+\
+\
 
-To add names to the package edit the data.json located in root of this package.
+ To add names to the package edit the data.json located in root of this package.
 
 https://www.npmjs.com/package/isa-know-name
