@@ -1,6 +1,6 @@
 {
   "name": "isa-know-name",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple validation to check if a string or array contains a  know first name",
   "main": "index.js",
   "scripts": {
