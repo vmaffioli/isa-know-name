@@ -1,4 +1,4 @@
-# isname
+# isa-know-name
 
 A simple validation to check if a string is a know first name.
 
@@ -6,16 +6,16 @@ At this point the main function just compares an input string with a json list l
 
 The focus of this project are build and upload a simple NPM Package, for studies pruporses.
 
-##Instalation -> 
+## Instalation 
     npm install isa-know-name 
     
-##In code usage example -> 
+## In code usage example
     const name = require('is-know-name');
 
-##To check if string/array contains a know name and returns a boolean value
+## To check if string/array contains a know name and returns a boolean value
     name.check('string or array here')
 
-##To filter the string/input and returns a new array with only know names
+## To filter the string/input and returns a new array with only know names
     name.filter('string or array here');
 
 
